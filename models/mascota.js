@@ -2,7 +2,7 @@
 const { default: mongoose } = require('mongoose')
 
 const registrarMAscota = require('../config/conectionMongoose')
- //
+ 
 
  const SchemaMascota = new mongoose.Schema({
     //di
