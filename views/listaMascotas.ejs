@@ -26,6 +26,7 @@
                 <th scope="col">NOMBRE</th>
                 <th scope="col">RAZA</th>
                 <th scope="col">EDAD</th>
+                <th scope="col">actualizar</th>
             </tr>
         </thead>
         <tbody>
@@ -42,6 +43,10 @@
                     </td>
                     <td>
                         <%=elemento.edad%>
+                    </td>
+                    <td>
+                        <button type="button" onclick="" class="btn btn-dark">actualizar</button>
+                       <a href="/borrar/<%= elemento.id %>"><%=elemnto.id%></a>
                     </td>
                 </tr>
                 <%})%>

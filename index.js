@@ -48,14 +48,20 @@ app.post('/registrar', async(req, res)=>{
 
     let listaMascotas = await mascota.find();
 
-    res.render('listaMascotas',{
-
-        "mascota":listaMascotas,
-
-    })   
+    res.redirect('mascotas')
 });
 
-app.put
+//checkProjectExists :Este módulo se usa comúnmente para crear, leer, actualizar, eliminar y renombrar un archivo
+//eliminar
+app.get ('/borrar/:id',(req, res) => {
+
+    const { id } = req.params.id;
+    
+    mascota.collection('actualizar_mascota').doc(id).delate()
+    res.render('mascotas')
+   
+
+   });
 
 
 
